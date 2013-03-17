@@ -9,19 +9,11 @@
     <meta name="author" content="Fabrice Matrat"/>
     <link href="css/prez.css" rel="stylesheet"/>
     <link href="css/impress-demo.css" rel="stylesheet"/>
-    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-    <script src="js/BouncingBalls.js"></script>
-    <script type="text/javascript">
-
-        $('#mobile_for_fun').live('pageshow', function (e) {
-            init();
-        });
-    </script>
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 </head>
 <body>
 
 <div id="impress">
-
 
     <div id="introduction-1" class="step big" data-x="-990" data-y="-3150" data-scale="0.6">
         <img src="img/fabrice.png" style="width:128px; height:128px;"/>
@@ -148,8 +140,6 @@
 
 <div class="step" class="step" data-x="990" data-y="-2202" data-scale="0.6">
     <div style="float:left;width:1000px;">
-        <div style="font-size:30px;font-weight:bold">Like the presentation format?</div> 
-        <div id="technologies" style="font-size:30px;"></div>            
         <div style="font-size:30px;font-weight:bold">You can download a pdf version of my resume</div>
         <a  href="pdf/FabriceMatrat.pdf"><img src="img/Adobe-PDF.gif" style="position:absolute; width:128px"/></a>
                 <a rel="external" href="http://www.linkedin.com/pub/fabrice-matrat/1/287/943"><img src="img/in.png" style="position:absolute ;left:35%;width:128px;"/></a>
@@ -191,8 +181,6 @@ document.getElementById("impress").addEventListener("impress:stepenter", functio
 
 }, false);
 
-
-$("#technologies").airport([ 'impress.js', 'jQuery', 'jQuery Airport', 'jCloud' ]);
 
 </script>
 <script src="js/impress.js"></script>
